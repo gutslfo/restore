@@ -1,4 +1,4 @@
-# Fresh Windows machine, one line:  irm https://raw.githubusercontent.com/gutslfo/restore/main/b.ps1 | iex
+# Fresh Windows machine, one line in PowerShell:  irm gutslfo.github.io/restore | iex
 # Installs git + GitHub CLI, signs in (browser + 2FA), pulls the private config repo and runs the real restore.
 foreach ($id in 'Git.Git', 'GitHub.cli') {
     winget install -e --id $id --silent --accept-source-agreements --accept-package-agreements
